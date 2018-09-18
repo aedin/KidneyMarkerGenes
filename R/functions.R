@@ -12,7 +12,7 @@ downloadData<- function() {
 
 
 
-#' Title
+#' mapMouse2Human
 #'
 #' @param MGI character vector of mouse gene symbols
 #'
@@ -34,10 +34,9 @@ mapMouse2Human<-function(MGI){
   return(hugenes)
 }
 
-#' Create RData file from Clarke Genes Supplementary materials
+#' .clarkeGenes: Create RData file from Clarke Genes Supplementary materials
 #'
-#' @return
-#' @export
+#' @return  Generates .rda file
 #'
 #' @examples
 #' .clarkeGenes()
@@ -51,14 +50,13 @@ mapMouse2Human<-function(MGI){
 }
 
 
-#' Title
+#' clarkeGenesSigs: Extract gene sets as matrix or list from Clarke Suppl file
 #'
 #' @param id  Character either with value "Symbol" or "Ensembl". Return signature as gene symbols or EnsEMBL gene identifers
 #' @param matrix  logical, default TRUE, return matrix, if FALSE return list
 #' @param convertNA  Logical. Default is FALSE Replace NA with 0
 #'
-#' @return
-#' @export
+#' @return  matrix or list with gene sets
 #'
 #' @examples
 #' clarkeGenesSigs(id= "Symbol",matrix=TRUE)
@@ -81,13 +79,12 @@ clarkeGenesSigs<-function(id="Symbol", matrix=TRUE,  convertNA=FALSE){
 #' @param x a matrix  or data.frame
 #'
 #' @return matrix where rowSum(x) and colSum(x) >0
-#' @export
+#' @examples
 #' mm<-matrix(c(1:30, rep(0, 10)), ncol=4, nrow=10)
 #' mm[4,]<-0
 #' mm
 #' excludeZeroSumRowCol(mm)
 #'
-#' @examples
 excludeZeroSumRowCol<-function(x){
   x<-x[!rowSums(x)==0,]
   x<-x[,!colSums(x)==0]
