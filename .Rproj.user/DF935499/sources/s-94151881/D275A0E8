@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1537295331721.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "D275A0E8",
+    "lastKnownWriteTime" : 1537299775,
+    "last_content_update" : 1537299775824,
+    "path" : "~/Documents/GitHub/Kidney/KidneyMarkerGenes/Intro.Rmd",
+    "project_path" : "Intro.Rmd",
+    "properties" : {
+        "cursorPosition" : "53,0",
+        "scrollLine" : "48",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
